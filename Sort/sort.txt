@@ -1,0 +1,6 @@
+str1	2
+str2	5
+str1	5
+str1	3
+str2	7
+str2	1
