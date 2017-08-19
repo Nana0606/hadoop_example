@@ -24,6 +24,7 @@ str2	1
 输出成：
 str1	2,3,5
 str2	1,5,7
+后面key对应的value值时递增排序的
 */
 public class SortMain {
 	
