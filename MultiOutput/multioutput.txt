@@ -1,0 +1,19 @@
+1512,iphone5s,4英寸,指纹识别,A7处理器,64位,M7协处理器,低功耗
+
+1512,iphone5,4英寸,A6处理器,IOS7
+
+1512,iphone4s,3.5英寸,A5处理器,双核,经典
+
+50019780,ipad,9.7英寸,retina屏幕,丰富的应用
+
+50019780,yoga,联想,待机18小时,外形独特
+
+50019780,nexus 7,华硕&google,7英寸
+
+50019780,ipad mini 2,retina显示屏,苹果,7.9英寸
+
+1101,macbook air,苹果超薄,OS X mavericks
+
+1101,macbook pro,苹果,OS X lion
+
+1101,thinkpad yoga,联想,windows 8,超级本
