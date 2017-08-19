@@ -16,5 +16,8 @@ This repository includes some codes about hadoop basic operations.
 # PartitionExample
 此文件夹下主要包含3个java文件和1个txt文件， MapperClass.java、ReducerClass.java、TextPartition.java和partition.txt。主要功能是：给出若干行数据，每行由2或3或4个字符串组成，现将2个字符串、3个字符串和4个字符串的数据分别输出到不同文件，即2个数据的所有行放在一个文件......，partition.txt是输入文件
 
+# Sort
+此文件夹下主要包含7个java文件和1个txt文件， IntPaire.java、PartitionByText.java、SortMain.java、SortMapper.java、SortReducer.java、TextComparator.java、TextIntComparator.java和sort.txt，主要实现功能是：整合同一个key对应的不同value，将其显示成key value1,value2,value3的形式。其中value的是递增排序的
+
 # Word Count
 此文件夹下主要包含3个java文件和1个txt文件，MapperClass.java、ReducerClass.java、WordCounter.java和wordsCount.txt。主要功能是统计字符串出现的次数，txt文件是代码中用到的资源文件
