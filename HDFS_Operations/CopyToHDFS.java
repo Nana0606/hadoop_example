@@ -11,7 +11,7 @@ public class CopyToHDFS {
 		
 		
 		//copyFromLocal，主要操作是将本地文件复制到HDFS
-		
+		 
 		//step1: 获取Configuration对象
 		Configuration conf = new Configuration();
 		conf.set("fs.default.name", "hdfs://192.168.163.131:9000");
