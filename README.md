@@ -38,7 +38,7 @@ This repository includes some codes about hadoop basic operations.
 此文件夹下主要包含3个java文件和1个txt文件， MapperClass.java、ReducerClass.java、TextPartition.java和partition.txt。主要功能是：给出若干行数据，每行由2或3或4个字符串组成，现将2个字符串、3个字符串和4个字符串的数据分别输出到不同文件，即2个数据的所有行放在一个文件......，partition.txt是输入文件
 
 # ScalaTest
-主要包括AverageAge，HDFSExample,
+主要包括AverageAge，HDFSExample, PeopleInfo, WordCount
 （来源网络）
 ## AverageAge
 主要包括2个scala文件，AvgAgeCalculator.scala和PeopleDataFileGenerator.scala，后者是数据生成的文件，前者是求平均年龄的文件
@@ -46,6 +46,8 @@ This repository includes some codes about hadoop basic operations.
 主要包括1个scala文件和1个txt文件，HDFSExample.scala和scalaTest.txt，主要功能是统计若干字符串中含有字符a和b的字符串分别有多少
 ## PeopleInfo
 主要包括2个scala文件，PeopleInfoCalculator.scala和PeopleInfoFileGenerator.scala，主要功能是：计算出男女人数，男性中的最高和最低身高，以及女性中的最高和最低身高。
+## WordCount
+主要包括1个scala文件和1个txt文件，WordCount.scala和partition.txt，主要用于统计单词出现个数
 
 # Sort
 此文件夹下主要包含7个java文件和1个txt文件， IntPaire.java、PartitionByText.java、SortMain.java、SortMapper.java、SortReducer.java、TextComparator.java、TextIntComparator.java和sort.txt，主要实现功能是：整合同一个key对应的不同value，将其显示成key value1,value2,value3的形式。其中value的是递增排序的
