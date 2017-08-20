@@ -14,7 +14,7 @@ This repository includes some codes about hadoop basic operations.
 此文件夹下主要包括6个java文件和2个txt文件，CommonReduce.java、FirstComparator.java、JoinMain.java、KeyPartition.java、PreMapper.java、TextPair.java、action.txt和alipay.txt。主要功能是：action是商品和交易的匹配，alipay是商品和支付的匹配，求出交易和支付的相应记录（这个目前存在bug）
 
 # MapReduceExample
-主要包括KMeans,
+主要包括KMeans，PageRank，LogClean和FlowInfo。
 （来源网络）
 ## KMeans
 主要包括4个java文件和一个txt文件，Center.java、IntSumReducer.java、Run.java、TokenizerMapper.java和note.txt，其中note.txt含有代码思想和简单分析（very important）
