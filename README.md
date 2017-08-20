@@ -38,7 +38,7 @@ This repository includes some codes about hadoop basic operations.
 此文件夹下主要包含3个java文件和1个txt文件， MapperClass.java、ReducerClass.java、TextPartition.java和partition.txt。主要功能是：给出若干行数据，每行由2或3或4个字符串组成，现将2个字符串、3个字符串和4个字符串的数据分别输出到不同文件，即2个数据的所有行放在一个文件......，partition.txt是输入文件
 
 # ScalaTest
-主要包括AverageAge，HDFSExample, PeopleInfo, WordCount
+主要包括AverageAge，HDFSExample, PeopleInfo, SparkWordCount,TopKSearchKeyWords和WordCount
 （来源网络）
 ## AverageAge
 主要包括2个scala文件，AvgAgeCalculator.scala和PeopleDataFileGenerator.scala，后者是数据生成的文件，前者是求平均年龄的文件
@@ -46,6 +46,10 @@ This repository includes some codes about hadoop basic operations.
 主要包括1个scala文件和1个txt文件，HDFSExample.scala和scalaTest.txt，主要功能是统计若干字符串中含有字符a和b的字符串分别有多少
 ## PeopleInfo
 主要包括2个scala文件，PeopleInfoCalculator.scala和PeopleInfoFileGenerator.scala，主要功能是：计算出男女人数，男性中的最高和最低身高，以及女性中的最高和最低身高。
+## SparkWordCount
+主要包括1个scala文件，SparkWordCount.scala，和WordCount功能相同
+## TopKSearchKeyWords
+主要包括1个scala文件和1个txt文件，TopKSearchKeyWords.scala和keywords.txt，主要功能是：统计搜索频率最高的 K 个科技关键词或词组，输入文件为搜索关键词和词组
 ## WordCount
 主要包括1个scala文件和1个txt文件，WordCount.scala和partition.txt，主要用于统计单词出现个数
 
