@@ -14,24 +14,26 @@ This repository includes some codes about hadoop basic operations.
 此文件夹下主要包括6个java文件和2个txt文件，CommonReduce.java、FirstComparator.java、JoinMain.java、KeyPartition.java、PreMapper.java、TextPair.java、action.txt和alipay.txt。主要功能是：action是商品和交易的匹配，alipay是商品和支付的匹配，求出交易和支付的相应记录（这个目前存在bug）
 
 # MapReduceExample
-主要包括ExtractMac，FlowInfo，KMeans，LogClean，MaxTemperature，PageRank，PageRank2和PosChange。
+主要包括ExtractMac，FlowInfo，KMeans，LogClean，MaxTemperature，PageRank，PageRank2，PosChange和WordsFrequencies。
 （来源网络）
 ## ExtractMac
 主要包括1个java文件和1个txt文件，Test_1.java和test_1.txt，主要功能是：提取出输入文件的1,2,7个字段并输出
 ## FlowInfo
 主要包括4个java文件和1个txt文件，DataWritable.java、MyMapper.java、MyReducer.java、Run.java和flowInfo.txt，主要功能：某手机营业商的一些用户信息，手机号码、ip、时间、地点、使用时间、上行流量、下行流量等信息，现在需要统计所有用户，及每个用户使用的所有上行流量、下行流量信息。
 ## KMeans
-主要包括4个java文件和一个txt文件，Center.java、IntSumReducer.java、Run.java、TokenizerMapper.java和note.txt，其中note.txt含有代码思想和简单分析（very important）
+主要包括4个java文件和1个txt文件，Center.java、IntSumReducer.java、Run.java、TokenizerMapper.java和note.txt，其中note.txt含有代码思想和简单分析（very important）
 ## LogClean
 主要包含4个java文件和1个txt文件，LogCleanJob.java、LogParser.java、MyMapper.java、MyReducer.java和2015_05_30.log。主要功能是：将ip、time、url整理成需要的格式并输出。
 ## MaxTemperature
 主要包含3个java文件和1个txt文件，MaxTemperatureDriver.java、MaxTemperatureMapper.java、MaxTemperatureReducer.java和temperature.txt，主要功能是根据若干年份及其温度，求出所有年份对应的最高温度
 ## PageRank
-主要包括1个java文件和一个txt文件，PageRank.java和pagerank.txt
+主要包括1个java文件和1个txt文件，PageRank.java和pagerank.txt
 ## PageRank2
 主要包括PageRank2.java，这个pagerank的代码还在学习中......
 ## PosChange
-主要包括1个java文件和一个txt文件，Test_2.java和test_2.txt，主要功能是根据key-value，展示出value-key1|key2|key3...的形式
+主要包括1个java文件和1个txt文件，Test_2.java和test_2.txt，主要功能是根据key-value，展示出value-key1|key2|key3...的形式
+## WordsFrequencies
+主要包括4个java文件和1个txt文件，WordsFrequenciesCombiner.java、WordsFrequenciesMapper.java、WordsFrequenciesPartitioner.java、WordsFrequenciesReducer.java、WordsFrequenciesRunner.java和WordsFrequencies.txt，功能和WordCount类似，但是这个example使用了combiner，效率较高
 
 
 
