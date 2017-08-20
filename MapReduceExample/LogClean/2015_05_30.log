@@ -1,7 +1,9 @@
-110.75.173.48	20130530235958	thread-36410-1-9.html
-220.181.89.186	20130530235959	forum.php?mod=attachment&aid=Mjg3fDgyN2E0M2UzfDEzNTA2Mjc3MzF8MHwxNTU5
-112.122.34.89	20130530235959	forum.php?mod=ajax&action=forumchecknew&fid=91&time=1369929501&inajax=yes
-5.9.7.208	20130530235959	thread-10438-3-1.html HTTP/1.0
-110.75.173.43	20130530235958	forum.php?mod=viewthread&tid=52766&pid=347551&page=1&extra=
-222.36.188.206	20130530235958	forum.php?mod=viewthread&tid=51540&viewpid=339437&inajax=1&ajaxtarget=post_339437
-220.181.89.156	20130530235959	thread-7467-1-1.html
+110.75.173.48 - - [30/May/2013:23:59:58 +0800] "GET /thread-36410-1-9.html HTTP/1.1" 200 68629
+220.181.89.186 - - [30/May/2013:23:59:59 +0800] "GET /forum.php?mod=attachment&aid=Mjg3fDgyN2E0M2UzfDEzNTA2Mjc3MzF8MHwxNTU5 HTTP/1.1" 200 -
+112.122.34.89 - - [30/May/2013:23:59:59 +0800] "GET /forum.php?mod=ajax&action=forumchecknew&fid=91&time=1369929501&inajax=yes HTTP/1.1" 200 66
+5.9.7.208 - - [30/May/2013:23:59:59 +0800] "GET /thread-10438-3-1.html HTTP/1.0" 200 45780
+110.75.173.43 - - [30/May/2013:23:59:58 +0800] "GET /forum.php?mod=viewthread&tid=52766&pid=347551&page=1&extra= HTTP/1.1" 200 57126
+222.36.188.206 - - [30/May/2013:23:59:58 +0800] "GET /forum.php?mod=viewthread&tid=51540&viewpid=339437&inajax=1&ajaxtarget=post_339437 HTTP/1.1" 200 22121
+220.181.89.156 - - [30/May/2013:23:59:59 +0800] "GET /thread-7467-1-1.html HTTP/1.1" 200 38651
+222.36.188.206 - - [31/May/2013:00:00:01 +0800] "GET /static/image/common/none.gif HTTP/1.1" 304 -
+222.36.188.206 - - [31/May/2013:00:00:01 +0800] "GET /static/image/common/none.gif HTTP/1.1" 304 -
