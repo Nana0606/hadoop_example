@@ -7,6 +7,9 @@ This repository includes some codes about hadoop basic operations.
 # HDFS_Operations
 此文件夹下主要包含8个java文件和1个txt文件，Basic.java、CopyFile.java、CopyToHDFS.java、CreateFile.java、FindFileOnHDFS.java、GetLTime.java、HDFSMkdir.java、PutMerge.java和word.txt。其中word.txt是CopyToHDFS.java需要的本地文件。CopyFile.java和CopyToHDFS.java功能类似。PutMerge.java的实现思想是在文件上传的过程中，将文件合并，这样不需要先将所有文件上传到HDFS，再在HDFS上合并（效率较低且占用HDFS的空间）。GetLTime.java功能是获取文件修改时间。Basic.java中包含HDFS的基本操作，包括：list(), mkdir(), readFile(), ifExists(), putMerge(), renameFile(), addFile(), deleteFile(), getModificationTime(), getHostnames()
 
+# HiveJdbcClient
+此文件夹下主要包含一个java文件，HiveTest.java，主要是Hive的驱动连接。
+
 # Join
 此文件夹下主要包括6个java文件和2个txt文件，CommonReduce.java、FirstComparator.java、JoinMain.java、KeyPartition.java、PreMapper.java、TextPair.java、action.txt和alipay.txt。主要功能是：action是商品和交易的匹配，alipay是商品和支付的匹配，求出交易和支付的相应记录（这个目前存在bug）
 
