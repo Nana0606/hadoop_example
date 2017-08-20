@@ -13,6 +13,13 @@ This repository includes some codes about hadoop basic operations.
 # Join
 此文件夹下主要包括6个java文件和2个txt文件，CommonReduce.java、FirstComparator.java、JoinMain.java、KeyPartition.java、PreMapper.java、TextPair.java、action.txt和alipay.txt。主要功能是：action是商品和交易的匹配，alipay是商品和支付的匹配，求出交易和支付的相应记录（这个目前存在bug）
 
+# MapReduceExample
+主要包括KMeans,
+（来源网络）
+
+## KMeans
+主要包括4个java文件和一个txt文件
+
 # MultiOutput
 此文件夹下主要包含3个java文件和1个txt文件， MainJob.java、MultiOutPutMapper.java、MultiOutPutReducer.java和multioutput.txt，主要实现多文件输出，输出格式代码中有详细注释
 
