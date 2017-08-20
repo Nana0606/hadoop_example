@@ -14,7 +14,7 @@ This repository includes some codes about hadoop basic operations.
 此文件夹下主要包括6个java文件和2个txt文件，CommonReduce.java、FirstComparator.java、JoinMain.java、KeyPartition.java、PreMapper.java、TextPair.java、action.txt和alipay.txt。主要功能是：action是商品和交易的匹配，alipay是商品和支付的匹配，求出交易和支付的相应记录（这个目前存在bug）
 
 # MapReduceExample
-主要包括ExtractMac，FlowInfo，KMeans，LogClean，MaxTemperature，PageRank和PageRank2。
+主要包括ExtractMac，FlowInfo，KMeans，LogClean，MaxTemperature，PageRank，PageRank2和PosChange。
 （来源网络）
 ## ExtractMac
 主要包括1个java文件和1个txt文件，Test_1.java和test_1.txt，主要功能是：提取出输入文件的1,2,7个字段并输出
@@ -30,6 +30,8 @@ This repository includes some codes about hadoop basic operations.
 主要包括1个java文件和一个txt文件，PageRank.java和pagerank.txt
 ## PageRank2
 主要包括PageRank2.java，这个pagerank的代码还在学习中......
+## PosChange
+主要包括1个java文件和一个txt文件，Test_2.java和test_2.txt，主要功能是根据key-value，展示出value-key1|key2|key3...的形式
 
 
 
