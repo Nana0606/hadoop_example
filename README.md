@@ -16,14 +16,17 @@ This repository includes some codes about hadoop basic operations.
 # MapReduceExample
 主要包括KMeans，PageRank，LogClean和FlowInfo。
 （来源网络）
-## KMeans
-主要包括4个java文件和一个txt文件，Center.java、IntSumReducer.java、Run.java、TokenizerMapper.java和note.txt，其中note.txt含有代码思想和简单分析（very important）
-## PageRank
-主要包括1个java文件和一个txt文件，PageRank.java和pagerank.txt
-## LogClean
-主要包含4个java文件和1个txt文件，LogCleanJob.java、LogParser.java、MyMapper.java、MyReducer.java和2015_05_30.log。主要功能是：将ip、time、url整理成需要的格式并输出。
 ## FlowInfo
 主要包括4个java文件和1个txt文件，DataWritable.java、MyMapper.java、MyReducer.java、Run.java和flowInfo.txt，主要功能：某手机营业商的一些用户信息，手机号码、ip、时间、地点、使用时间、上行流量、下行流量等信息，现在需要统计所有用户，及每个用户使用的所有上行流量、下行流量信息。
+## KMeans
+主要包括4个java文件和一个txt文件，Center.java、IntSumReducer.java、Run.java、TokenizerMapper.java和note.txt，其中note.txt含有代码思想和简单分析（very important）
+## LogClean
+主要包含4个java文件和1个txt文件，LogCleanJob.java、LogParser.java、MyMapper.java、MyReducer.java和2015_05_30.log。主要功能是：将ip、time、url整理成需要的格式并输出。
+## MaxTemperature
+主要包含3个java文件和1个txt文件，MaxTemperatureDriver.java、MaxTemperatureMapper.java、MaxTemperatureReducer.java和temperature.txt，主要功能是根据若干年份及其温度，求出所有年份对应的最高温度
+## PageRank
+主要包括1个java文件和一个txt文件，PageRank.java和pagerank.txt
+
 
 
 # MultiOutput
