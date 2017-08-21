@@ -46,7 +46,8 @@ public class WordCountHbaseMapRed01 {
 		job.setInputFormatClass(KeyValueTextInputFormat.class);
 		job.setMapOutputKeyClass(Text.class);
 		job.setMapOutputValueClass(Text.class);
-				
+		
+		//输入文件，part-r-00000是wordcount的输出文件，即单词及其出现的次数
 		FileInputFormat.addInputPath(job, new Path("hdfs://192.168.163.131:9000/output/wordcountOut/part-r-00000"));
 		checkTable(configuration);
 		TableMapReduceUtil.initTableReducerJob(tablename, MyHbaseReducer.class, job);
