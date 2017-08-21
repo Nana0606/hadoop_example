@@ -37,7 +37,7 @@ public class WordCountHbaseMapRed01 {
 	private static void run() throws IOException, ClassNotFoundException, InterruptedException {
 		// TODO Auto-generated method stub
 		Configuration configuration = new Configuration();
-	    configuration = HBaseConfiguration.create(configuration);
+	        configuration = HBaseConfiguration.create(configuration);
 		
 		Job job = Job.getInstance(configuration, "MyWordCount");
 		job.setJarByClass(WordCountHbaseMapRed01.class);
