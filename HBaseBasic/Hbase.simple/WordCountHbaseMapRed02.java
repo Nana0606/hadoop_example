@@ -19,6 +19,7 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 /*
+ * HBase --> HDFS
  * 来自：http://www.2cto.com/net/201605/510155.html
  * Mapper负责写到HDFS上
  * Reducer负责写到HBase上
