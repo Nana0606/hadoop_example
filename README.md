@@ -5,9 +5,11 @@ This repository includes some codes about hadoop basic operations.
 此文件夹下主要包含2个java文件，TextPair.java和TextPair2.java，都是自定义的数据类型。其中TextPair.java重写了write()和readFields()2个函数，TextPair2.java重写的函数较多
 
 # HBaseBasic
-主要包括Hbase.simple
+主要包括Hbase.simple、Hbase.wordcount文件夹
 ## Hbase.simple
 主要包括4个java文件，HbaseBean.java、WordCountHbaseMapRed01.java、WordCountHbaseMapRed02.java和WordCountHbaseMapRed03.java，其中HbaseBean.java主要功能包括数据表的新建、插入、查询和删除。WordCountHbaseMapRed01.java是将HDFS数据写入Hbase，WordCountHbaseMapRed02.java是将Hbase数据写入HDFS，WordCountHbaseMapRed03.java是将HBase的数据写入Hbase。
+## Hbase.wordcount
+主要包括3个java文件，WordCountHbaseMapper.java、WordCountHbaseReducer.java和WordCountHbaseTest.java，主要功能是：根据给定文件内容，统计单词及其出现次数，并将结果写入Hbase。
 
 # HDFS_Operations
 此文件夹下主要包含8个java文件和1个txt文件，Basic.java、CopyFile.java、CopyToHDFS.java、CreateFile.java、FindFileOnHDFS.java、GetLTime.java、HDFSMkdir.java、PutMerge.java和word.txt。其中word.txt是CopyToHDFS.java需要的本地文件。CopyFile.java和CopyToHDFS.java功能类似。PutMerge.java的实现思想是在文件上传的过程中，将文件合并，这样不需要先将所有文件上传到HDFS，再在HDFS上合并（效率较低且占用HDFS的空间）。GetLTime.java功能是获取文件修改时间。Basic.java中包含HDFS的基本操作，包括：list(), mkdir(), readFile(), ifExists(), putMerge(), renameFile(), addFile(), deleteFile(), getModificationTime(), getHostnames()
