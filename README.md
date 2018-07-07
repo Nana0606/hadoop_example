@@ -1,45 +1,60 @@
 # Hadoop_Introduction
-This repository includes some codes about hadoop basic operations.
+Hadoop基本操作和实例，具体如下。
 
 # Custom_DataType
-此文件夹下主要包含2个java文件，TextPair.java和TextPair2.java，都是自定义的数据类型。其中TextPair.java重写了write()和readFields()2个函数，TextPair2.java重写的函数较多
+此文件夹下主要包含2个java文件，TextPair.java和TextPair2.java，都是自定义的数据类型。
+* TextPair.java重写了write()和readFields()2个函数
+* TextPair2.java重写的函数较多
 
 # HBaseBasic
 主要包括Hbase.simple、Hbase.wordcount文件夹
-## Hbase.simple
-主要包括4个java文件，HbaseBean.java、WordCountHbaseMapRed01.java、WordCountHbaseMapRed02.java和WordCountHbaseMapRed03.java，其中HbaseBean.java主要功能包括数据表的新建、插入、查询和删除。WordCountHbaseMapRed01.java是将HDFS数据写入Hbase，WordCountHbaseMapRed02.java是将Hbase数据写入HDFS，WordCountHbaseMapRed03.java是将HBase的数据写入Hbase。
-## Hbase.wordcount
-主要包括3个java文件，WordCountHbaseMapper.java、WordCountHbaseReducer.java和WordCountHbaseTest.java，主要功能是：根据给定文件内容，统计单词及其出现次数，并将结果写入Hbase。
+* Hbase.simple
+主要包括4个java文件，HbaseBean.java、WordCountHbaseMapRed01.java、WordCountHbaseMapRed02.java和WordCountHbaseMapRed03.java。
+  * HbaseBean.java主要功能包括数据表的新建、插入、查询和删除。
+  * WordCountHbaseMapRed01.java是将HDFS数据写入Hbase
+  * WordCountHbaseMapRed02.java是将Hbase数据写入HDFS
+  * WordCountHbaseMapRed03.java是将HBase的数据写入Hbase。
+* Hbase.wordcount
+主要包括3个java文件，WordCountHbaseMapper.java、WordCountHbaseReducer.java和WordCountHbaseTest.java，主要功能是：
+  * 根据给定文件内容，统计单词及其出现次数
+  * 将结果写入Hbase。
 
 # HDFS_Operations
-此文件夹下主要包含8个java文件和1个txt文件，Basic.java、CopyFile.java、CopyToHDFS.java、CreateFile.java、FindFileOnHDFS.java、GetLTime.java、HDFSMkdir.java、PutMerge.java和word.txt。其中word.txt是CopyToHDFS.java需要的本地文件。CopyFile.java和CopyToHDFS.java功能类似。PutMerge.java的实现思想是在文件上传的过程中，将文件合并，这样不需要先将所有文件上传到HDFS，再在HDFS上合并（效率较低且占用HDFS的空间）。GetLTime.java功能是获取文件修改时间。Basic.java中包含HDFS的基本操作，包括：list(), mkdir(), readFile(), ifExists(), putMerge(), renameFile(), addFile(), deleteFile(), getModificationTime(), getHostnames()
+此文件夹下主要包含8个java文件和1个txt文件，Basic.java、CopyFile.java、CopyToHDFS.java、CreateFile.java、FindFileOnHDFS.java、GetLTime.java、HDFSMkdir.java、PutMerge.java和word.txt。
+* word.txt是CopyToHDFS.java需要的本地文件。
+* CopyFile.java和CopyToHDFS.java功能类似
+* PutMerge.java的实现思想是在文件上传的过程中，将文件合并，这样不需要先将所有文件上传到HDFS，再在HDFS上合并（效率较低且占用HDFS的空间）。
+* GetLTime.java功能是获取文件修改时间。
+* Basic.java中包含HDFS的基本操作，包括：list(), mkdir(), readFile(), ifExists(), putMerge(), renameFile(), addFile(), deleteFile(), getModificationTime(), getHostnames()
 
 # HiveJdbcClient
 此文件夹下主要包含一个java文件，HiveTest.java，主要是Hive的驱动连接。
 
 # Join
-此文件夹下主要包括6个java文件和2个txt文件，CommonReduce.java、FirstComparator.java、JoinMain.java、KeyPartition.java、PreMapper.java、TextPair.java、action.txt和alipay.txt。主要功能是：action是商品和交易的匹配，alipay是商品和支付的匹配，求出交易和支付的相应记录（这个目前存在bug）
+此文件夹下主要包括6个java文件和2个txt文件，CommonReduce.java、FirstComparator.java、JoinMain.java、KeyPartition.java、PreMapper.java、TextPair.java、action.txt和alipay.txt。主要功能是：
+* action是商品和交易的匹配
+* alipay是商品和支付的匹配，求出交易和支付的相应记录（这个目前存在bug）
 
 # MapReduceExample
 主要包括ExtractMac，FlowInfo，KMeans，LogClean，MaxTemperature，PageRank，PageRank2，PosChange和WordsFrequencies。
 （来源网络）
-## ExtractMac
+* ExtractMac
 主要包括1个java文件和1个txt文件，Test_1.java和test_1.txt，主要功能是：提取出输入文件的1,2,7个字段并输出
-## FlowInfo
+* FlowInfo
 主要包括4个java文件和1个txt文件，DataWritable.java、MyMapper.java、MyReducer.java、Run.java和flowInfo.txt，主要功能：某手机营业商的一些用户信息，手机号码、ip、时间、地点、使用时间、上行流量、下行流量等信息，现在需要统计所有用户，及每个用户使用的所有上行流量、下行流量信息。
-## KMeans
+* KMeans
 主要包括4个java文件和1个txt文件，Center.java、IntSumReducer.java、Run.java、TokenizerMapper.java和note.txt，其中note.txt含有代码思想和简单分析（very important）
-## LogClean
+* LogClean
 主要包含4个java文件和1个txt文件，LogCleanJob.java、LogParser.java、MyMapper.java、MyReducer.java和2015_05_30.log。主要功能是：将ip、time、url整理成需要的格式并输出。
-## MaxTemperature
+* MaxTemperature
 主要包含3个java文件和1个txt文件，MaxTemperatureDriver.java、MaxTemperatureMapper.java、MaxTemperatureReducer.java和temperature.txt，主要功能是根据若干年份及其温度，求出所有年份对应的最高温度
-## PageRank
+* PageRank
 主要包括1个java文件和1个txt文件，PageRank.java和pagerank.txt
-## PageRank2
+* PageRank2
 主要包括PageRank2.java，这个pagerank的代码还在学习中......
-## PosChange
+* PosChange
 主要包括1个java文件和1个txt文件，Test_2.java和test_2.txt，主要功能是根据key-value，展示出value-key1|key2|key3...的形式
-## WordsFrequencies
+* WordsFrequencies
 主要包括4个java文件和1个txt文件，WordsFrequenciesCombiner.java、WordsFrequenciesMapper.java、WordsFrequenciesPartitioner.java、WordsFrequenciesReducer.java、WordsFrequenciesRunner.java和WordsFrequencies.txt，功能和WordCount类似，但是这个example使用了combiner，效率较高
 
 
@@ -53,17 +68,17 @@ This repository includes some codes about hadoop basic operations.
 # ScalaTest
 主要包括AverageAge，HDFSExample, PeopleInfo, SparkWordCount,TopKSearchKeyWords和WordCount
 （来源网络）
-## AverageAge
+* AverageAge
 主要包括2个scala文件，AvgAgeCalculator.scala和PeopleDataFileGenerator.scala，后者是数据生成的文件，前者是求平均年龄的文件
-## HDFSExampl
+* HDFSExampl
 主要包括1个scala文件和1个txt文件，HDFSExample.scala和scalaTest.txt，主要功能是统计若干字符串中含有字符a和b的字符串分别有多少
-## PeopleInfo
+* PeopleInfo
 主要包括2个scala文件，PeopleInfoCalculator.scala和PeopleInfoFileGenerator.scala，主要功能是：计算出男女人数，男性中的最高和最低身高，以及女性中的最高和最低身高。
-## SparkWordCount
+* SparkWordCount
 主要包括1个scala文件，SparkWordCount.scala，和WordCount功能相同
-## TopKSearchKeyWords
+* TopKSearchKeyWords
 主要包括1个scala文件和1个txt文件，TopKSearchKeyWords.scala和keywords.txt，主要功能是：统计搜索频率最高的 K 个科技关键词或词组，输入文件为搜索关键词和词组
-## WordCount
+* WordCount
 主要包括1个scala文件和1个txt文件，WordCount.scala和partition.txt，主要用于统计单词出现个数
 
 # Sort
