@@ -1,4 +1,4 @@
-wordcount的主要思想如下：
+wordcount的主要功能是统计文档中每一个词出现的词频，其主要思想如下：
 
 ### Mapper
 
