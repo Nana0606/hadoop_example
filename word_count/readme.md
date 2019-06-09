@@ -1,4 +1,4 @@
-### Requirements
+### 1、Requirements
 wordcount的主要功能是统计文档中每一个词出现的词频
 
 **输入：**
@@ -15,9 +15,9 @@ Hive    1
 Database    1
 ```
 
-### Mapper
+### 2、Mapper
 
-#### 1、文档分割
+#### 2.1、文档分割
 主要将文档分割，比如对于如下内容：
 ```
 Hadoop Spark
@@ -37,7 +37,7 @@ Hadoop  1
 Database    1
 ```
 
-#### 2、单词合并
+#### 2.2、单词合并
 在mappper中，key相同的value合并为value列表，并传送给reducer，内容如下：
 ```
 Hadoop  [1, 1, 1]
@@ -46,7 +46,7 @@ Hive    [1]
 Database    [1]
 ```
 
-### Reducer
+### 3、Reducer
 Reducer接收来自mapper的结果，并对相同key的value进行加法操作，形成如下结果：
 ```
 Hadoop  3
