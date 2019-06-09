@@ -35,7 +35,11 @@ multioutput主要是实现多输出的功能，功能需求如下：
 ```
 
 ### 3、Reducer
-Reducer中需要设置多输出模式，引入一个MultipleOutputs并设置需要输出的内容即可。
+Reducer中需要设置多输出模式，引入一个MultipleOutputs并设置需要输出的内容即可。如reducer中内容所示：
+```
+multipleOutputs.write("KeySplit", NullWritable.get(), key.toString() + "/"); 
+multipleOutputs.write("AllPart", NullWritable.get(), text); 
+```
 
 
 
