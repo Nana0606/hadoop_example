@@ -1,4 +1,19 @@
-wordcount的主要功能是统计文档中每一个词出现的词频，其主要思想如下：
+### Requirements
+wordcount的主要功能是统计文档中每一个词出现的词频
+
+**输入：**
+```
+Hadoop Spark
+Hive Hadoop Hadoop
+Database
+```
+**输出：**
+```
+Hadoop  3
+Spark   1
+Hive    1
+Database    1
+```
 
 ### Mapper
 
