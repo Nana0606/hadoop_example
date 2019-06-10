@@ -1,6 +1,8 @@
 # Hadoop_Introduction
 Hadoop基本操作和实例，具体如下。
 
+**注：** 每个示例的文件夹中都有代码对应的文档说明。
+
 # Custom_DataType
 此文件夹下主要包含2个java文件，TextPair.java和TextPair2.java，都是自定义的数据类型。
 * TextPair.java重写了write()和readFields()2个函数
@@ -89,5 +91,6 @@ Hadoop基本操作和实例，具体如下。
 
 
 # 其他
-### 1、理解Hadoop比较好的图（图片来源：https://blog.csdn.net/SunnyYoona/article/details/54176855）
+#### 1、理解Hadoop比较好的图
+（图片来源：https://blog.csdn.net/SunnyYoona/article/details/54176855）
 <div align=center><img src="https://github.com/Nana0606/hadoop_example/blob/master/imgs/hadoop_process.png" width="60%" alt="Hadoop运行过程"/></div>

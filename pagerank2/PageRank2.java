@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+这个pagerank代码未使用Hadoop
+*/
+
 public class PageRank {
 	private static final double ALPHA = 0.85;
 	private static final double DISTANCE = 0.0000001;

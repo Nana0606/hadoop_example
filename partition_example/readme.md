@@ -33,16 +33,26 @@ cat 2 3 4
 ### 2、Mapper
 在mappper中，为了使得同一字符串长度的值进入到同一个key中，这里自定义key值，我们设置规则：若字符串的长度为2，则key=“short”；若字符串的长度为3，则key=“right”；若字符串的长度为4，则key=·“long”，mapper之后的结果如下：
 ```
+short   dada 1
+right   com 1 2
+right   dudu 3 4
+right   pha 5 4
+long    cat 2 3 4
+```
+
+### 3、Partition
+这里需要自定义partition，若key=“short”，则将其输入到``0 % numPartition``对应的partition中；若key=“right”，则将其输入到``1 % numPartition``对应的partition中；若key=“long”，则将其输入到``2 % numPartition``对应的partition中。
+
+### 4、Shuffle
+shuffle将结合整合并交给reducer，整合过的结果如下:
+```
 short   [dada 1]
 right   [com 1 2,dudu 3 4,pha 5 4]
 long    [cat 2 3 4]
 ```
 
-### 3、Reducer
+### 5、Reducer
 这里reducer输出即可，不需要特殊处理
-
-### 4、Partition
-这里需要自定义partition，若key=“short”，则将其输入到``0 % numPartition``对应的partition中；若key=“right”，则将其输入到``1 % numPartition``对应的partition中；若key=“long”，则将其输入到``2 % numPartition``对应的partition中。
 
 
 

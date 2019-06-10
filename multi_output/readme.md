@@ -34,7 +34,14 @@ iphone4s,3.5英寸,A5处理器,双核,经典
 1513    iphone4s,3.5英寸,A5处理器,双核,经典
 ```
 
-### 3、Reducer
+### 3、Shuffle
+shuffle阶段将mapper的结果整合：
+```
+1512    ["iphone5s,4英寸,指纹识别,A7处理器,64位,M7协处理器,低功耗", "iphone5,4英寸,A6处理器,IOS7"]
+1513    ["iphone4s,3.5英寸,A5处理器,双核,经典"]
+```
+
+### 4、Reducer
 Reducer中需要设置多输出模式，引入一个MultipleOutputs并设置需要输出的内容即可。如reducer中内容所示：
 ```
 multipleOutputs.write("KeySplit", NullWritable.get(), key.toString() + "/"); 
