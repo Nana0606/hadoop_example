@@ -14,7 +14,7 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
-public class Test_2 extends Configured implements Tool{
+public class PosChange extends Configured implements Tool{
 
 	enum Counter{
 		LINESKIP, //出错的行
@@ -58,8 +58,8 @@ public class Test_2 extends Configured implements Tool{
 		// TODO Auto-generated method stub
 		Configuration conf = getConf();
 		
-		Job job = new Job(conf, "Test_2");  //任务名
-		job.setJarByClass(Test_2.class);   //指定Class
+		Job job = new Job(conf, "PosChange");  //任务名
+		job.setJarByClass(PosChange.class);   //指定Class
 		
 		FileInputFormat.addInputPath(job, new Path(args[0]));  //输入路径
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));  //输出路径
@@ -76,7 +76,7 @@ public class Test_2 extends Configured implements Tool{
 	
 	public static void main(String[] args) throws Exception{
 		//运行任务
-		int res = ToolRunner.run(new Configuration(), new Test_2(), args);
+		int res = ToolRunner.run(new Configuration(), new PosChange(), args);
 		System.exit(res);
 	}
 	

@@ -86,3 +86,8 @@ Hadoop基本操作和实例，具体如下。
 
 # Word Count
 此文件夹下主要包含3个java文件和1个txt文件，MapperClass.java、ReducerClass.java、WordCounter.java和wordsCount.txt。主要功能是统计字符串出现的次数，txt文件是代码中用到的资源文件
+
+
+# 其他
+### 1、理解Hadoop比较好的图（图片来源：https://blog.csdn.net/SunnyYoona/article/details/54176855）
+<div align=center><img src="https://github.com/Nana0606/hadoop_example/blob/master/imgs/hadoop_process.png" width="60%" alt="Hadoop运行过程"/></div>
