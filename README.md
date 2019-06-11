@@ -9,7 +9,7 @@ Hadoop基本操作和实例，具体如下。
 * TextPair2.java重写的函数较多
 
 ## extract_mac
-主要包括1个java文件和1个txt文件，Test_1.java和test_1.txt，主要功能是：提取出输入文件的1,2,7个字段并输出
+主要包括1个java文件和1个txt文件，extractMac.java和log.txt，主要功能是：提取出输入文件的1,2,7个字段并输出
 
 ## flow_info
 主要包括4个java文件和1个txt文件，DataWritable.java、MyMapper.java、MyReducer.java、Run.java和flowInfo.txt，主要功能：某手机营业商的一些用户信息，手机号码、ip、时间、地点、使用时间、上行流量、下行流量等信息，现在需要统计所有用户，及每个用户使用的所有上行流量、下行流量信息。
@@ -67,7 +67,7 @@ Hadoop基本操作和实例，具体如下。
 此文件夹下主要包含3个java文件和1个txt文件， MapperClass.java、ReducerClass.java、TextPartition.java和partition.txt。主要功能是：给出若干行数据，每行由2或3或4个字符串组成，现将2个字符串、3个字符串和4个字符串的数据分别输出到不同文件，即2个数据的所有行放在一个文件......，partition.txt是输入文件
 
 ## pos_change
-主要包括1个java文件和1个txt文件，Test_2.java和test_2.txt，主要功能是根据key-value，展示出value-key1|key2|key3...的形式
+主要包括1个java文件和1个txt文件，PosChange.java和pos_change.txt，主要功能是根据key-value，展示出value-key1|key2|key3...的形式
 
 ## scala_test
 主要包括AverageAge，HDFSExample, PeopleInfo, SparkWordCount,TopKSearchKeyWords和WordCount
