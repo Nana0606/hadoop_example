@@ -1,5 +1,3 @@
-package com.hbase.test;
-
 import java.io.IOException;
 import java.util.List;
 

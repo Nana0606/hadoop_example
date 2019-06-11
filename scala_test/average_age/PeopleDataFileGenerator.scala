@@ -1,5 +1,3 @@
-package com.test
-
 import java.io.FileWriter
 import java.io.File
 import scala.util.Random

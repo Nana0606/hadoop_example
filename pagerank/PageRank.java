@@ -1,5 +1,3 @@
-package com.pagerank;
-
 import java.io.IOException;
 import java.util.StringTokenizer;
 

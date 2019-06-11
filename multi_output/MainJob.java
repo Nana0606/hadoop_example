@@ -1,5 +1,3 @@
-package com.itcast.hadoop.muliti;
-
 import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;

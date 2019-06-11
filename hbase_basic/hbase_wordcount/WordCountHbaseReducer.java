@@ -1,5 +1,3 @@
-package com.hbase.wordcount;
-
 import java.io.IOException;
 
 import org.apache.hadoop.hbase.client.Put;

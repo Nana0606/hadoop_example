@@ -13,7 +13,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
-public class Test_1 extends Configured implements Tool{
+public class extractMac extends Configured implements Tool{
 
 	enum Counter{
 		LINESKIP,   //出错的行
@@ -45,8 +45,8 @@ public class Test_1 extends Configured implements Tool{
 		// TODO Auto-generated method stub
 		Configuration conf = getConf();
 		
-		Job job = new Job(conf, "Test_1"); //任务名
-		job.setJarByClass(Test_1.class);  //指定Class
+		Job job = new Job(conf, "extractMac"); //任务名
+		job.setJarByClass(extractMac.class);  //指定Class
 		
 		FileInputFormat.addInputPath(job, new Path(args[0]));  //输入路径
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));  //输出路径
@@ -64,8 +64,8 @@ public class Test_1 extends Configured implements Tool{
 	}
 
 	public static void main(String[] args) throws Exception{
-		//运行任务，Test_1()要求必须与主class相一致
-		int res = ToolRunner.run(new Configuration(), new Test_1(), args);
+		//运行任务，extractMac()要求必须与主class相一致
+		int res = ToolRunner.run(new Configuration(), new extractMac(), args);
 		System.exit(res);
 	}
 } 

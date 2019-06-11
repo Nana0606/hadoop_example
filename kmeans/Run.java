@@ -1,4 +1,3 @@
-package com.kmeans;
 
 /*
  * 代码来源：http://blog.csdn.net/garfielder007/article/details/51612730

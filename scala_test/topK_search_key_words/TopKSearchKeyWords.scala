@@ -1,5 +1,3 @@
-package com.test
-
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.execution.datasources.text.TextFileFormat

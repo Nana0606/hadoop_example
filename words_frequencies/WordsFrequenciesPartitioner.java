@@ -1,4 +1,3 @@
-package com.oserp.wordsfrequencies;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Partitioner;

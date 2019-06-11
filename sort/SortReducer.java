@@ -1,5 +1,3 @@
-package com.itcast.hadoop.sort;
-
 import java.io.IOException;
 import java.util.Iterator;
 

@@ -1,5 +1,3 @@
-package com.itcast.hadoop.join;
-
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Partitioner;
 
