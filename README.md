@@ -107,4 +107,4 @@ Hadoop基本操作和实例，具体如下。
 
 
 2)(图片来源：https://waltyou.github.io/Hadoop-MapReduce-Workflow/)
-<div align=center><img src="https://github.com/Nana0606/hadoop_example/blob/master/imgs/mapreduce-job-execution-flow.png" width="80%" alt="Hadoop运行过程"/></div>
+<div align=center><img src="https://github.com/Nana0606/hadoop_example/blob/master/imgs/mapreduce-job-execution-flow.png" width="100%" alt="Hadoop运行过程"/></div>
