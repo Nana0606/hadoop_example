@@ -100,5 +100,11 @@ Hadoop基本操作和实例，具体如下。
 
 ## 其他
 #### 1、理解Hadoop比较好的图
-（图片来源：https://blog.csdn.net/SunnyYoona/article/details/54176855）
+
+
+1)（图片来源：https://blog.csdn.net/SunnyYoona/article/details/54176855）
 <div align=center><img src="https://github.com/Nana0606/hadoop_example/blob/master/imgs/hadoop_process.png" width="60%" alt="Hadoop运行过程"/></div>
+
+
+2)(图片来源：https://waltyou.github.io/Hadoop-MapReduce-Workflow/)
+<div align=center><img src="https://github.com/Nana0606/hadoop_example/blob/master/imgs/mapreduce-job-execution-flow.png" width="80%" alt="Hadoop运行过程"/></div>
