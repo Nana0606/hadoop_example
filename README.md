@@ -1,7 +1,7 @@
 # Hadoop_Example
 Hadoop基本操作和实例，具体如下。
 
-<b><font color='red'>注： 每个示例的文件夹中都有代码对应的文档说明。</font></b>
+<b>注： 每个示例的文件夹中都有代码对应的文档说明。</b>
 
 ## custom_datatype
 此文件夹下主要包含2个java文件，TextPair.java和TextPair2.java，都是自定义的数据类型。
