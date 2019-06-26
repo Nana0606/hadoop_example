@@ -13,7 +13,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
-public class extractMac extends Configured implements Tool{
+public class ExtractMac extends Configured implements Tool{
 
 	enum Counter{
 		LINESKIP,   //出错的行

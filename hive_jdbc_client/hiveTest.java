@@ -4,7 +4,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 
-public class hiveTest {
+public class HiveTest {
 	
 	public static Connection getConnection(){
 		Connection connection = null;
